@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Identity by HTML5 UP</title>
+		<title>MindLogger</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -16,7 +16,7 @@
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+			<div class="wrapper">
 
 				<!-- Main -->
 					<section id="main">
@@ -64,24 +64,44 @@
 						-->
 						<footer>
 							<ul class="icons">
-								<li><a href="#" class="icon brands fa-apple">iOS</a></li>
-								<li><a href="#" class="icon brands fa-android">Android</a></li>
-								<li><a class="icon fa-laptop"><i class="fa fa-laptop"></i>Web</a></li>
+								<li><a href="https://testflight.apple.com/join/XbOijcEc" class="icon brands fa-apple">iOS</a></li>
+								<li><a href="https://play.google.com/apps/testing/lab.childmindinstitute.data" class="icon brands fa-android">Android</a></li>
+								<!-- <li><a href="https://web.mindlogger.org" class="icon fa-laptop"><i class="fa fa-laptop"></i>Web</a></li> -->
 							</ul>
 							<small style="font-size: 0.75em;">
-								Download for iOS, Android, or Web
+								Download for iOS or Android 
+								<!-- , or Web -->
 							</small>
+							<hr>
+							<ul class="actions special">
+								<li><a class="button" onclick="document.getElementById('links').scrollIntoView()">Learn More</a></li>
+							</ul>
 						</footer>
 					</section>
 
 				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; <a href="matter.childmind.org">Matter Lab</a></li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							<li>Image from <a href="https://unsplash.com/photos/9AqIdzEc9pY">Unsplash</a></li>
-						</ul>
-					</footer>
 
+
+			</div>
+
+			<div class="wrapper" id="links">
+				<section id="main">
+					<h1>Links</h1>
+					<ul class="actions special" style="display: block;">
+						<li><a class="button" style="margin: 5px;" href="https://admin.mindlogger.org">Quickstart</a></li>
+						<li><a class="button" style="margin: 5px;" href="https://admin.mindlogger.org">Mindlogger Admin Page</a></li>
+						<li><a class="button" style="margin: 5px;" href="https://mindlogger.org">About Mindlogger</a></li>
+
+					</ul>
+
+				</section>
+
+				<footer id="footer">
+					<ul class="copyright">
+						<li>&copy; <a href="matter.childmind.org">Matter Lab</a></li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>Image from <a href="https://unsplash.com/photos/9AqIdzEc9pY">Unsplash</a></li>
+					</ul>
+				</footer>
 			</div>
 
 		<!-- Scripts -->
@@ -90,6 +110,17 @@
 					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
 					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
 				}
+
+			// function scrollToPos(scrollDuration, scrollTo) {
+			// 	var scrollStep = scrollTo / (scrollDuration / 15),
+			// 		scrollInterval = setInterval(function(){
+			// 			console.log(window.scrollY, scrollTo)
+			// 		if ( window.scrollY < scrollTo ) {
+			// 			window.scrollBy( 0, scrollStep );
+			// 		}
+			// 		else clearInterval(scrollInterval); 
+			// 	},15);
+			// }
 			</script>
 
 	</body>

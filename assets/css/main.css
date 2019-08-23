@@ -1007,7 +1007,7 @@
 
 /* Wrapper */
 
-	#wrapper {
+	.wrapper {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -1034,23 +1034,23 @@
 		z-index: 2;
 	}
 
-		#wrapper > * {
+		.wrapper > * {
 			z-index: 1;
 		}
 
-		#wrapper:before {
+		.wrapper:before {
 			content: '';
 			display: block;
 		}
 
 		@media screen and (max-width: 360px) {
 
-			#wrapper {
+			.wrapper {
 				padding: 0.75em;
 			}
 
 		}
 
-		body.is-ie #wrapper {
+		body.is-ie .wrapper {
 			height: 100%;
 		}
