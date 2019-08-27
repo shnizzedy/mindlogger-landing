@@ -1,0 +1,9 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+	<script>
+    window.location.replace("https://mindlogger.org")
+  </script>
+    </head>
+    <body></body>
+</html>
